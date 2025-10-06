@@ -19,7 +19,7 @@ def gamma(x, a, b):
 for ls in [(1, 1), (2, 1), (3, 1), (2, 2)]:
     a, b = ls[0], ls[1]
 
-    x = np.arange(0, 20, 0.01, dtype=np.float)
+    x = np.arange(0, 20, 0.01)
     x, y, u, s = gamma(x, a=a, b=b)
     plt.plot(x, y, label=r'$\mu=%.2f,\ \sigma=%.2f,'
                          r'\ \alpha=%d,\ \beta=%d$' % (u, s, a, b))

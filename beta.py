@@ -22,7 +22,7 @@ for ls in [(1, 3), (5, 1), (2, 2), (2, 5)]:
     a, b = ls[0], ls[1]
 
     # x in [0, 1], trial is 1/0.001 = 1000
-    x = np.arange(0, 1, 0.001, dtype=np.float)
+    x = np.arange(0, 1, 0.001)
     x, y, u, s = beta(x, a=a, b=b)
     plt.plot(x, y, label=r'$\mu=%.2f,\ \sigma=%.2f,'
                          r'\ \alpha=%d,\ \beta=%d$' % (u, s, a, b))

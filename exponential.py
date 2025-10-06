@@ -11,7 +11,7 @@ def exponential(x, lamb):
 
 for lamb in [0.5, 1, 1.5]:
 
-    x = np.arange(0, 20, 0.01, dtype=np.float)
+    x = np.arange(0, 20, 0.01)
     x, y, u, s = exponential(x, lamb=lamb)
     plt.plot(x, y, label=r'$\mu=%.2f,\ \sigma=%.2f,'
                          r'\ \lambda=%d$' % (u, s, lamb))
